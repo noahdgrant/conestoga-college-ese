@@ -1,0 +1,14 @@
+# Ignore all
+*
+
+# Unignore all with extentions
+!*.*
+
+# Unignore all dirs
+!*/
+
+# Unignore Makefiles
+!Makefile
+
+# Ingore all .o files
+*.o

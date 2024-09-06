@@ -1,0 +1,85 @@
+header, section, footer, aside, nav, article, figure {display: block;}
+
+fieldset{
+  border: 1px ridge black;
+  padding: 10px 0px 10px 20px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+input[type=text]{
+  color:grey;
+}
+
+input[type=text]:focus{
+  color:black;
+}
+
+legend{
+  display: block;
+  background: blue;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #337ab7;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.right {
+  float: right;
+}
+
+.form_input {
+  width: 270px;
+  height: 20px;
+  text-align: left;
+  padding: 0px, 0px, 0px, 10px;
+  margin-bottom: 5px;
+}
+
+.form_label {
+  width: 120px;
+  padding: 0px, 10px, 0px, 0px;
+  font-weight: bold;
+}
+
+.about {
+  position: relative;
+}
+
+.submit {
+  float: right;
+  margin-right: 20px;
+}
+
+.content {
+  margin: auto;
+  width: 50%;
+  padding: 200px 100px 100px 500px;
+}
+
+.error {
+  font-style: italic;
+}

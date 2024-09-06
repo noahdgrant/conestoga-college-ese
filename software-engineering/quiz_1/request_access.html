@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Noah Grant">
+    <meta name="description" content="Quiz 1">
+    <meta name="robots" content="noindex">
+    <meta http-equiz="pragma" content="no-cache">
+    <link href='css/style.css' rel='stylesheet'>
+    <title>Quiz 1</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- navigation menu to be placed here later -->
+      </nav>
+    </header>
+
+    <article>
+      <h1>Request Access</h1>
+      <form class='reqAccess' action='php/requestAccess.php' method='post' id='requestAccess'>
+
+        <!-- Group basic info into a field with a legend -->
+        <fieldset>
+          <legend>
+            Contact Details
+          </legend>
+          <!-- Basic info -->
+          <div>
+            <label for="first_name" class="form_label">First Name:</label>
+            <input id="first_name" class="form_input" type="text" name="first_name">
+          </div>
+          <div>
+            <label for="middle_name" class="form_label">Middle Name:</label>
+            <input id="middle_name" class="form_input" type="text" name="middle_name">
+          </div>
+          <div>
+            <label for="last_name" class="form_label">Last Name:</label>
+            <input id="last_name" class="form_input" type="text" name="last_name">
+          </div>
+          <div>
+            <label for="email" class="form_label">Email:</label>
+            <input id="email" class="form_input" type="email" name="email">
+          </div>
+          <div>
+            <label for="website" class="form_label">Website:</label>
+            <input id="website" class="form_input" type="text" name="website">
+          </div>
+          <div>
+            <label for="birthday" class="form_label">Birth date:</label>
+            <input id="birthday" class="form_input" type="date" name="birthday">
+          </div>
+
+          <!-- Radio button -->
+          <div>
+            <label for="fac_or_student" class="form_label">Request Type:</label>
+            <label><input type='radio' name='fac_or_student' value='faculty' />Faculty</label>
+            <label><input type='radio' name='fac_or_student' value='student' />Student</label>
+          </div>
+        </fieldset>
+        <br />
+        <!-- Group other questions into a field with a legend -->
+
+        <p>Tell us a bit about yourself</p>
+        <!-- Textarea -->
+        <div class="about">
+          <textarea class='text'>Please enter your comments here ...</textarea>
+          <img class="noah" src="images/noah.jpeg" alt=“picture_of_noah” title=“noah”/>
+        </div>
+
+        <!-- Submit button -->
+        <input class='submit' type='submit' value="Submit Request" />
+      </form>
+    </article>
+
+    <footer>
+      <p id='copyright'>
+        Copyright &copy 2024 Noah Grant
+      </p>
+    </footer>
+  </body>
+</html>

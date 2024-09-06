@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Noah Grant">
+    <meta name="description" content="Midterm">
+    <meta name="robots" content="noindex">
+    <meta http-equiz="pragma" content="no-cache">
+    <link href='css/style.css' rel='stylesheet'>
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="page" class="container">
+      <header>
+        <header>
+          <nav>
+            <ul>
+              <li><a>Project Website</a></li>
+              <li class="right"><a href="login.html">Login</a></li>
+              <li class="right"><a href="signup.html">Sign Up</a></li>
+            </ul> 
+          </nav>
+        </header>
+        <div id="content" class="content">
+          <form action="./php/authenticate.php" method="get" id="login">
+            <fieldset>
+              <legend>Login</legend>
+              <div>
+                <label for="username" class="form_label">Username:</label>
+                <input id="username" class="form_input" type="text" name="username" autofocus>
+                <p id="user_errror_msg"></p>
+              </div>
+              <div>
+                <label for="password" class="form_label">Password:</label>
+                <input id="password" class="form_input" type="password" name="password">
+                <p id="pswd_errror_msg"></p>
+              </div>
+              <div>
+              </div>
+              <br>
+              <input class="submit" type="submit" value="Login" id="submit">
+            </fieldset>
+          </form>
+        </div>
+        <footer id="footer">
+        </footer>
+    </div>
+    <script src="js/check_credentials.js"></script>
+  </body>
+</html>
